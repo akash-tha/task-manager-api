@@ -1,3 +1,4 @@
+require('dotenv').config({silent:true});
 const express = require('express')
 const port = process.env.PORT
 require('./db/mongoose')
