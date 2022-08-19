@@ -1,4 +1,5 @@
 require('dotenv').config({silent:true});
+var serverless = require('serverless-http')
 const express = require('express')
 const port = process.env.PORT
 require('./db/mongoose')
@@ -18,10 +19,7 @@ app.use(userRouter)
 app.use(taskRouter)
 
 
-
-app.listen(port, ()=>{
-    console.log('server is up on port', port)
-})
+module.exports.handler = serverless(app);
 
 
 

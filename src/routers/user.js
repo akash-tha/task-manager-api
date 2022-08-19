@@ -15,7 +15,6 @@ const router = express.Router()
 //route to create a user with async await
 router.post('/users', async (req,res)=>{
     
-    console.log(req.body)
     const user = new User (req.body)
     
     try {

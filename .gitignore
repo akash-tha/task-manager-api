@@ -3,3 +3,4 @@ test.env
 dev.env
 .env
 *.env
+package-lock.json
