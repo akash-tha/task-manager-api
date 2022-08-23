@@ -7,7 +7,7 @@ In order to test the code locally, run command: serverless offline start
 
 Note: Sharp module may throw error when running on windows machine. It can be resolved by uninstalling "sharp" npm module and installing normally (npm install sharp).
 
-In order to deploy the code on AWS, run command: serverless deploy\n
+In order to deploy the code on AWS, run command: serverless deploy
 
 Note: Sharp module may throw error at run time. To resolve this, 
  - uninstall sharp module (npm uninstall sharp)
